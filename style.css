@@ -38,7 +38,7 @@ header {
     color: black;
 }
 
-.backgroundimage {
+.background-image {
     background-image: url(./assets/photos/09-day.jpg);
     background-size: cover;
     background-position: 50% 83%;
@@ -51,8 +51,18 @@ header {
     align-items: center;
 }
 
-.backgroundimage__txt {
-    margin: 1rem;
+.background-image__shade {
+    background-color: rgba(253, 253, 253, 0.25);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.background-image__txt {
+    font-weight: 700;
 }
 
 .main {
@@ -61,6 +71,6 @@ header {
     margin-top: 2rem;
 }
 
-.main__header {
-    font-family: var(--font)
+.main__title {
+    font-family: var(--font);
 }
