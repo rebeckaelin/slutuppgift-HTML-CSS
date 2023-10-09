@@ -18,7 +18,7 @@ header {
 }
 
 .header__logo img {
-    max-height: 8vh;
+    max-height: 5vh;
 }
 
 .navbar__list {
@@ -30,7 +30,7 @@ header {
 }
 
 .navbar__listitem {
-    margin: .5rem;
+    margin: .4rem;
 }
 
 .navbar__link {
@@ -38,10 +38,29 @@ header {
     color: black;
 }
 
-.welcomeimage {
+.backgroundimage {
     background-image: url(./assets/photos/09-day.jpg);
     background-size: cover;
     background-position: 50% 83%;
     height: 20vh;
     width: 100%;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundimage__txt {
+    margin: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.main__header {
+    font-family: var(--font)
 }
