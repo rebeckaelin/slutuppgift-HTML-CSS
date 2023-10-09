@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@900&family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font:'Oswald', sans-serif; 
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(222,207,214);
+    padding: .5rem;
+}
+
+.header__logo img {
+    max-height: 8vh;
+}
+
+.navbar__list {
+    list-style-type: none;
+    display: flex;
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.navbar__listitem {
+    margin: .5rem;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: black;
+}
+
+.welcomeimage {
+    background-image: url(./assets/photos/09-day.jpg);
+    background-size: cover;
+    background-position: 50% 83%;
+    height: 20vh;
+    width: 100%;
+}
