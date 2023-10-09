@@ -52,13 +52,17 @@ header {
 }
 
 .background-image__shade {
-    background-color: rgba(253, 253, 253, 0.25);
+    background-color: rgba(253, 253, 253, 0.35);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+}
+
+.background-image__shade:hover {
+    background-color: rgb(255, 255, 255, 0.75);
 }
 
 .background-image__txt {
