@@ -7,7 +7,8 @@
 }
 
 :root {
-    --font:'Oswald', sans-serif; 
+    --font:'Oswald', sans-serif;
+    --lett_spa: .1rem 
 }
 header {
     display: flex;
@@ -26,7 +27,7 @@ header {
     display: flex;
     font-family: var(--font);
     font-weight: 600;
-    letter-spacing: .1rem;
+    letter-spacing: var(--lett_spa)
 }
 
 .navbar__listitem {
@@ -76,11 +77,15 @@ header {
 .main__title {
     font-family: var(--font);
     text-align: center;
+    letter-spacing: var(--lett_spa)
 }
+
+
+
 
 @media (min-width: 426px) {
     .background-image {
-        background-size: cover;
         width: 100vw;
+        height: 40vh;
     }
 }
