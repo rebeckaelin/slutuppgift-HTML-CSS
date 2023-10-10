@@ -108,10 +108,6 @@ header {
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
 }
 
-.services__card:hover {
-    
-}
-
 .services__card-icon {
     height: 25px;
     width: 25px;
@@ -145,7 +141,6 @@ header {
 }
 .featured-room__price {
     position: absolute;
-    /* margin: .5rem; */
     font-weight: 900;
     font-size: 1.2rem;
     background-color: var(--primary_color_op);
@@ -157,12 +152,17 @@ header {
     height: auto;
     width: 80vw;
     border: .1rem solid var(--span_color);
-
+}
+.featured-room__button {
+    padding: .2rem;
+    margin-top: .4rem;
+    font-weight: 800;
+    font-size: .9rem;
+    position: absolute; 
+    bottom: 0;
+    right: 0;
 }
 
-.featured-room__image:hover {
-    opacity: 100%;
-}
 /* ASIDE */
 
 /* FOOTER */
