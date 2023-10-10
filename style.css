@@ -39,7 +39,7 @@ header {
     list-style-type: none;
     display: flex;
     font-weight: 700;
-    font-size: .9rem;
+    /* font-size: .9rem; */
 }
 .nav__item {
     margin: .5rem;
@@ -130,6 +130,7 @@ header {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    letter-spacing: var(--lett_spa);
 }
 .featured-rooms__list {
     display: flex;
@@ -137,9 +138,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    letter-spacing: var(--lett_spa);
     text-align: center;
-    letter-spacing: var(--lett_spa);
 }
 .featured-room {
     position: relative;
@@ -180,7 +179,7 @@ header {
 .footer__nav-list {
     list-style-type: none;
     font-weight: 700;
-    font-size: .9rem;
+    /* font-size: .9rem; */
 }
 
 .footer__logo img {
@@ -206,9 +205,8 @@ header {
     }
     .services__card {
         max-width: 15rem;
-        max-height: 6rem;
+        max-height: 7rem;
     }
-
     .featured-rooms__list {
         flex-direction: row;
     }
@@ -217,7 +215,6 @@ header {
         width: 28vw;
         opacity: 70%;
     }
-
     .featured-room__image:hover {
         opacity: 100%;
     }
