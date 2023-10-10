@@ -13,6 +13,14 @@
     --primary_color: rgb(222,207,214);
     --primary_color_op: rgb(222,207,214,.6);
     --secondary_color_op: rgba(253, 253, 253, 0.35);
+    --span_color: rgb(85,92,99);
+}
+
+span {
+    color: var(--span_color)
+}
+p {
+    font-size: .77rem;
 }
 
 /* HEADER */
@@ -107,6 +115,26 @@ header {
     text-align: center;
 }
 /* MAIN SECTION */
+
+/* ASIDE */
+.featured-rooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    letter-spacing: var(--lett_spa);
+}
+
+.featured-rooms img{
+    height: auto;
+    width: 70vw;
+    border-radius: 2rem;
+}
+
+
+/* ASIDE */
 
 /* FOOTER */
 .footer {
