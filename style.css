@@ -123,7 +123,12 @@ header {
 /* MAIN SECTION */
 
 /* ASIDE */
-.featured-room {
+.featured-rooms__title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.featured-rooms__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,21 +137,22 @@ header {
     letter-spacing: var(--lett_spa);
     text-align: center;
 }
-
-.featured-rooms__title {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+.featured-room {
+    position: relative;
 }
-
-.featured-rooms img{
+.featured-room__price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    color: var(--primary_color);
+    font-style: italic;
+}
+.featured-room__image{
     height: auto;
     width: 80vw;
-    border-radius: 2rem;
     border: .1rem solid var(--span_color);
 }
-
-
 /* ASIDE */
 
 /* FOOTER */
@@ -168,8 +174,8 @@ header {
 
 @media (min-width: 426px) {
     .image {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
     }
     .services {
         max-width: 1001px;
