@@ -140,16 +140,23 @@ header {
 }
 .featured-room__price {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 1rem;
-    color: var(--primary_color);
-    font-style: italic;
+    /* margin: .5rem; */
+    font-weight: 900;
+    font-size: 1.2rem;
+    background-color: var(--primary_color_op);
+    padding: .2rem;
+    border: .13rem solid var(--span_color);
+
 }
-.featured-room__image{
+.featured-room__image {
     height: auto;
     width: 80vw;
     border: .1rem solid var(--span_color);
+    opacity: 70%;
+}
+
+.featured-room__image:hover {
+    opacity: 100%;
 }
 /* ASIDE */
 
@@ -159,9 +166,8 @@ header {
     justify-content: space-between;
     padding: 1rem 1rem .7rem 1rem;
     background-color: var(--primary_color);
-    margin-top: 1rem;
+    margin-top: 2rem;
     letter-spacing: var(--lett_spa);
-    margin-top: 6rem;
 }
 
 .footer__logo img {
