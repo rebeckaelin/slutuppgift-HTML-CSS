@@ -35,7 +35,7 @@ header {
 .header__logo img {
     max-height: 5vh;
 }
-.nav__list {
+.header__nav-list {
     list-style-type: none;
     display: flex;
     font-weight: 700;
@@ -169,15 +169,23 @@ header {
 /* FOOTER */
 .footer {
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem 1rem .7rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem;
     background-color: var(--primary_color);
     margin-top: 2rem;
     letter-spacing: var(--lett_spa);
 }
 
+.footer__nav-list {
+    list-style-type: none;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
 .footer__logo img {
-    max-height: 3vh;
+    max-height: 4vh;
+    padding-top: .4rem;
 }
 /* FOOTER */
 
