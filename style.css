@@ -35,8 +35,6 @@ header {
 .header__logo img {
     max-height: 5vh;
 }
-
-
 .nav__list {
     list-style-type: none;
     display: flex;
@@ -165,6 +163,7 @@ header {
     letter-spacing: var(--lett_spa);
     margin-top: 6rem;
 }
+
 .footer__logo img {
     max-height: 3vh;
 }
