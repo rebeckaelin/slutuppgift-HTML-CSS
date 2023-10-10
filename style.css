@@ -35,6 +35,8 @@ header {
 .header__logo img {
     max-height: 5vh;
 }
+
+
 .navbar__list {
     list-style-type: none;
     display: flex;
@@ -47,6 +49,10 @@ header {
 .navbar__link {
     text-decoration: none;
     color: black;
+}
+
+.navbar__link--hover:hover {
+    color: var(--span_color);
 }
 /* HEADER */
 
@@ -117,20 +123,27 @@ header {
 /* MAIN SECTION */
 
 /* ASIDE */
-.featured-rooms {
+.featured-room {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 4rem;
     letter-spacing: var(--lett_spa);
+    text-align: center;
+}
+
+.featured-rooms__title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .featured-rooms img{
     height: auto;
-    width: 70vw;
+    width: 80vw;
     border-radius: 2rem;
+    border: .1rem solid var(--span_color);
 }
 
 
@@ -159,7 +172,7 @@ header {
         padding-bottom: 6rem;
     }
     .services {
-        max-width: 1340px;
+        max-width: 1001px;
         margin: 0 auto;
     }
     .services_cards {
@@ -167,7 +180,15 @@ header {
         flex-direction: row;
     }
     .services__card {
-        max-width: 20rem;
-        max-height: 8rem;
+        max-width: 15rem;
+        max-height: 6rem;
+    }
+
+    .featured-room {
+        flex-direction: row;
+    }
+
+    .featured-room img {
+        width: 28vw;
     }
 }
