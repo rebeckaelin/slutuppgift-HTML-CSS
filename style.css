@@ -35,7 +35,7 @@ header {
 }
 
 .navbar__listitem {
-    margin: .4rem;
+    margin: .3rem;
 }
 
 .navbar__link {
@@ -69,7 +69,7 @@ header {
     font-weight: 700;
 }
 
-/* MAIN SECTION */
+/* MAIN SECTION */  
 
 .services__title {
     text-align: center;
@@ -82,9 +82,8 @@ header {
 
 .services_cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .services__card {
@@ -93,8 +92,9 @@ header {
     justify-content: center;
     align-items: center;
     margin: .5rem;
-    width: 280px;
-    height: 110px;
+    width: 40vw;
+    height: 20vh;
+    padding: .8rem;
     border: .3rem double var(--primary_color);
     border-radius: 1rem;
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
@@ -108,8 +108,26 @@ header {
     width: 25px;
 }
 
+.services__card-title {
+    text-align: center;
+}
+
 .services__card-txt {
     font-weight: 700;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem .7rem 1rem;
+    background-color: var(--primary_color);
+    margin-top: 1rem;
+    letter-spacing: var(--lett_spa);
+}
+
+.footer__logo img {
+    max-height: 3vh;
 }
 
 
@@ -118,10 +136,16 @@ header {
         padding-top: 10rem;
         padding-bottom: 10rem;
     }
-
+    .services {
+        max-width: 1340px;
+        margin: 0 auto;
+    }
     .services_cards {
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+    }
+    .services__card {
+        max-width: 20rem;
+        max-height: 8rem;
     }
 }
