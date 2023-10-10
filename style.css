@@ -89,7 +89,7 @@ header {
     align-items: center;
     margin: .5rem;
     width: 40vw;
-    height: 20vh;
+    height: 15vh;
     padding: .8rem;
     border: .3rem double var(--primary_color);
     border-radius: 1rem;
@@ -116,6 +116,7 @@ header {
     background-color: var(--primary_color);
     margin-top: 1rem;
     letter-spacing: var(--lett_spa);
+    margin-top: 6rem;
 }
 .footer__logo img {
     max-height: 3vh;
@@ -126,8 +127,8 @@ header {
 
 @media (min-width: 426px) {
     .image {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
     .services {
         max-width: 1340px;
