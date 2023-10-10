@@ -14,6 +14,8 @@
     --primary_color_op: rgb(222,207,214,.6);
     --secondary_color_op: rgba(253, 253, 253, 0.35);
 }
+
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -22,27 +24,25 @@ header {
     padding: .5rem;
     letter-spacing: var(--lett_spa);
 }
-
 .header__logo img {
     max-height: 5vh;
 }
-
 .navbar__list {
     list-style-type: none;
     display: flex;
     font-weight: 700;
     font-size: .9rem;
 }
-
 .navbar__listitem {
     margin: .3rem;
 }
-
 .navbar__link {
     text-decoration: none;
     color: black;
 }
+/* HEADER */
 
+/* IMAGE SECTION */
 .image {
     background-image: url(./assets/photos/09-day.jpg);
     background-size: cover;
@@ -54,7 +54,6 @@ header {
     align-items: center;
     letter-spacing: var(--lett_spa);
 }
-
 .image__shade {
     background-color: var(--secondary_color_op);
     border-radius: 1rem;
@@ -64,13 +63,12 @@ header {
     align-items: center;
     padding: 1rem;
 }
-
 .image__txt {
     font-weight: 700;
 }
+/* IMAGE SECTION */
 
 /* MAIN SECTION */  
-
 .services__title {
     text-align: center;
     margin-top: 6rem;
@@ -79,13 +77,11 @@ header {
     margin-bottom: 1rem;
     letter-spacing: var(--lett_spa);
 }
-
 .services_cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .services__card {
     display: flex;
     flex-direction: column;
@@ -98,25 +94,21 @@ header {
     border: .3rem double var(--primary_color);
     border-radius: 1rem;
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
-    -webkit-box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
-    -moz-box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
-
 }
-
 .services__card-icon {
     height: 25px;
     width: 25px;
 }
-
 .services__card-title {
     text-align: center;
 }
-
 .services__card-txt {
     font-weight: 700;
     text-align: center;
 }
+/* MAIN SECTION */
 
+/* FOOTER */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -125,11 +117,12 @@ header {
     margin-top: 1rem;
     letter-spacing: var(--lett_spa);
 }
-
 .footer__logo img {
     max-height: 3vh;
 }
+/* FOOTER */
 
+/* MEDIA QUERYS */
 
 @media (min-width: 426px) {
     .image {
