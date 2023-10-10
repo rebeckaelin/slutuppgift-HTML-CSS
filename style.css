@@ -107,6 +107,11 @@ header {
     border-radius: 1rem;
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
 }
+
+.services__card:hover {
+    
+}
+
 .services__card-icon {
     height: 25px;
     width: 25px;
@@ -152,7 +157,7 @@ header {
     height: auto;
     width: 80vw;
     border: .1rem solid var(--span_color);
-    opacity: 70%;
+
 }
 
 .featured-room__image:hover {
@@ -201,5 +206,10 @@ header {
 
     .featured-room__image {
         width: 28vw;
+        opacity: 70%;
+    }
+
+    .featured-room__image:hover {
+        opacity: 100%;
     }
 }
