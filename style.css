@@ -42,7 +42,7 @@ header {
     font-size: .9rem;
 }
 .nav__item {
-    margin: .3rem;
+    margin: .5rem;
 }
 .nav__link {
     text-decoration: none;
@@ -139,6 +139,7 @@ header {
     gap: 1rem;
     letter-spacing: var(--lett_spa);
     text-align: center;
+    letter-spacing: var(--lett_spa);
 }
 .featured-room {
     position: relative;
@@ -168,7 +169,7 @@ header {
 /* FOOTER */
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1rem 1rem .7rem 1rem;
     background-color: var(--primary_color);
     margin-top: 2rem;
