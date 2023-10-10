@@ -8,13 +8,16 @@
 
 :root {
     --font:'Oswald', sans-serif;
-    --lett_spa: .1rem 
+    --lett_spa: .1rem ;
+    --primary_color: rgb(222,207,214);
+    --primary_color_op: rgb(222,207,214,.6);
+    --secondary_color_op: rgba(253, 253, 253, 0.35);
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(222,207,214);
+    background-color: var(--primary_color);
     padding: .5rem;
 }
 
@@ -26,7 +29,8 @@ header {
     list-style-type: none;
     display: flex;
     font-family: var(--font);
-    font-weight: 600;
+    font-weight: 700;
+    font-size: .9rem;
     letter-spacing: var(--lett_spa)
 }
 
@@ -39,21 +43,20 @@ header {
     color: black;
 }
 
-.background-image {
+.image {
     background-image: url(./assets/photos/09-day.jpg);
     background-size: cover;
     background-position: 50% 83%;
-    min-height: 20vh;
-    min-width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-family: var(--font);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.background-image__shade {
-    background-color: rgba(253, 253, 253, 0.35);
+.image__shade {
+    background-color: var(--secondary_color_op);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -62,11 +65,11 @@ header {
     padding: 1rem;
 }
 
-.background-image__shade:hover {
-    background-color: rgb(255, 255, 255, 0.75);
+.image__shade:hover {
+    background-color: var(--primary_color_op)
 }
 
-.background-image__txt {
+.image__txt {
     font-weight: 700;
 }
 
@@ -84,8 +87,8 @@ header {
 
 
 @media (min-width: 426px) {
-    .background-image {
-        width: 100vw;
-        height: 40vh;
+    .image {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 }
