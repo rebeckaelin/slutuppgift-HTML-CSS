@@ -190,62 +190,7 @@ header {
 
 /* ****ANDRA SIDAN**** */
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: .5rem;
-}
 
-.gallery__image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    aspect-ratio: 16 / 9;
-    /* margin: 2rem 2rem 0 2rem; */
-}
-
-.gallery__description {
-    border: .3rem double var(--primary_color);
-    border-radius: 1rem;
-    padding: .3rem;
-    width: auto;
-    text-align: center;
-    margin: 0 auto;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gallery__image:nth-child(1) {
-    background-image: url(./assets/photos/05-day.jpg);
-    border: red solid 2px;
-}
-
-.gallery__image:nth-child(2) {
-    background-image: url(./assets/photos/06-day.jpg);
-
-}
-
-.gallery__image:nth-child(3) {
-    background-image: url(./assets/photos/07-day.jpg);
-
-}
-
-.gallery__image:nth-child(4) {
-    background-image: url(./assets/photos/08-day.jpg);
-
-}
-
-.gallery__image:nth-child(5) {
-    background-image: url(./assets/photos/09-day.jpg);
-
-}
-
-.gallery__image:nth-child(6) {
-    background-image: url(./assets/photos/01-day.jpg);
-
-}
 
 
 
