@@ -89,12 +89,12 @@ header {
     margin-bottom: 1rem;
     letter-spacing: var(--lett_spa);
 }
-.services__cards {
+.infocards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.services__card {
+.infocards__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,14 +108,14 @@ header {
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
 }
 
-.services__card-icon {
+.infocards__icon {
     height: 25px;
     width: 25px;
 }
-.services__card-title {
+.infocards__title {
     text-align: center;
 }
-.services__card-txt {
+.infocards__description {
     font-weight: 700;
     text-align: center;
 }
@@ -158,9 +158,6 @@ header {
     margin-top: .4rem;
     font-weight: 800;
     font-size: .9rem;
-    position: absolute; 
-    bottom: 0;
-    right: 0;
 }
 
 /* ASIDE */
