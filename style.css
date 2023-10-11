@@ -14,6 +14,8 @@
     --primary_color_op: rgb(222,207,214,.6);
     --secondary_color_op: rgba(253, 253, 253, 0.35);
     --span_color: rgb(85,92,99);
+    --main_border: .3rem double var(--primary_color);
+    --secondary_border: .1rem solid var(--span_color);
 }
 
 span {
@@ -105,7 +107,7 @@ header {
     margin: .3rem;
     width: 40vw;
     height: 13vh;
-    border: .3rem double var(--primary_color);
+    border: var(--main_border);
     border-radius: 1rem;
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
 }
@@ -150,7 +152,7 @@ header {
     font-size: 1.2rem;
     background-color: var(--primary_color_op);
     padding: .2rem;
-    border: .13rem solid var(--span_color);
+    border: var(--secondary_border)
 }
 .maingallery__image {
     height: auto;
@@ -189,10 +191,27 @@ header {
 /* ****FÖRSTA SIDAN SLUT**** */
 
 /* ****ANDRA SIDAN**** */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: .3rem;
+}
+.gallery__image {
+    /* border: .3rem double var(--primary_color); */
+    margin: 1rem 1rem 0 1rem;
+}
 
+.gallery__image img {
+    max-width: 100%;
+    border: var(--secondary_border);
 
+}
 
-
+.gallery__description {
+    text-align: center;
+    border: var(--main_border)
+}
 
 
 
@@ -230,5 +249,9 @@ header {
     }
     .maingallery__image:hover {
         opacity: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
