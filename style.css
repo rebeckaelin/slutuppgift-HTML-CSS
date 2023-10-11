@@ -135,7 +135,6 @@ header {
 .maingallery__title {
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 1rem;
     letter-spacing: var(--lett_spa);
     min-width: 100%;
     text-align: center;
