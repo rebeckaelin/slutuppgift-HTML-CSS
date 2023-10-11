@@ -196,13 +196,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     margin: 2rem;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin: 0 auto; */
 }
-
 .selectors label {
     font-size: 1.4rem;
     display: flex;
@@ -236,18 +230,15 @@ option {
     background-color: white;
     font-size: 1.2rem;
 }
-
 .checkboxes {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
     letter-spacing: .02rem;
 }
-
 .checkboxes label {
     margin-right: .3rem;
 }
-
 input[type="checkbox"] {
     margin-right: .8rem;
     margin-top: .15rem;
@@ -277,6 +268,7 @@ input[type="checkbox"] {
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: var(--lett_spa);
+    padding: .4rem;
 }
 
 
