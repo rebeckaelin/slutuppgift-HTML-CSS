@@ -191,26 +191,92 @@ header {
 /* ****FÖRSTA SIDAN SLUT**** */
 
 /* ****ANDRA SIDAN**** */
+/* ****FORMULÄR**** */
+.selectors {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto; */
+}
+
+.selectors label {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .8rem 0 .2rem 0;
+}
+
+/* input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    background: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    border: black solid 1px;
+    height: 7px;
+} */
+
+option {
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    letter-spacing: .02rem;
+}
+
+.checkboxes label {
+    margin-right: .3rem;
+}
+
+input[type="checkbox"] {
+    margin-right: .8rem;
+    margin-top: .15rem;
+}
+/* ****FORMULÄR**** */
+
+/* ****GALLERI**** */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: .3rem;
+    /* gap: 1rem; */
 }
 .gallery__image {
     /* border: .3rem double var(--primary_color); */
-    margin: 1rem 1rem 0 1rem;
+    margin: .9rem 1rem 0 1rem;
 }
 
 .gallery__image img {
-    max-width: 100%;
+    width: 100%;
     border: var(--secondary_border);
-
 }
 
 .gallery__description {
     text-align: center;
-    border: var(--main_border)
+    border: var(--main_border);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: var(--lett_spa);
 }
 
 
