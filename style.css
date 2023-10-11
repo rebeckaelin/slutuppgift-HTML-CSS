@@ -56,7 +56,7 @@ header {
 
 /* ****FÖRSTA SIDAN **** */
 /* IMAGE SECTION */
-.image {
+.heroimage {
     background-image: url(./assets/photos/09-day.jpg);
     background-size: cover;
     background-position: 50% 83%;
@@ -67,7 +67,7 @@ header {
     align-items: center;
     letter-spacing: var(--lett_spa);
 }
-.image__shade {
+.heroimage__shade {
     background-color: var(--secondary_color_op);
     border-radius: 1rem;
     display: flex;
@@ -76,14 +76,15 @@ header {
     align-items: center;
     padding: 1rem;
 }
-.image__description {
+.heroimage__description {
     font-weight: 700;
 }
 /* IMAGE SECTION */
 
 /* MAIN SECTION */  
-.servicetitle {
+.infocards__servicetitle {
     text-align: center;
+    min-width: 100%;
     margin-top: 6rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -100,6 +101,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 0;
     margin: .3rem;
     width: 40vw;
     height: 13vh;
@@ -121,22 +123,27 @@ header {
 /* MAIN SECTION */
 
 /* ASIDE */
-.maingallerytitle {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    letter-spacing: var(--lett_spa);
-}
 .maingallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.maingallery__title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: var(--lett_spa);
+    min-width: 100%;
     text-align: center;
 }
 .maingallery__container {
     position: relative;
+    min-width: 10;
+    text-align: center;
 }
 .maingallery__price {
     position: absolute;
@@ -256,7 +263,7 @@ header {
 /* MEDIA QUERYS */
 
 @media (min-width: 520px) {
-    .image {
+    .heroimage {
         padding-top: 7rem;
         padding-bottom: 7rem;
     }
