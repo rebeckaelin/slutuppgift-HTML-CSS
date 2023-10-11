@@ -54,6 +54,7 @@ header {
 }
 /* HEADER */
 
+/* ****FÖRSTA SIDAN **** */
 /* IMAGE SECTION */
 .image {
     background-image: url(./assets/photos/09-day.jpg);
@@ -106,7 +107,6 @@ header {
     border-radius: 1rem;
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
 }
-
 .infocards__icon {
     height: 25px;
     width: 25px;
@@ -145,7 +145,6 @@ header {
     background-color: var(--primary_color_op);
     padding: .2rem;
     border: .13rem solid var(--span_color);
-
 }
 .maingallery__image {
     height: auto;
@@ -171,18 +170,43 @@ header {
     margin-top: 2rem;
     letter-spacing: var(--lett_spa);
 }
-
 .footer__navlist {
     list-style-type: none;
     font-weight: 700;
     /* font-size: .9rem; */
 }
-
 .footer__logo img {
     max-height: 4vh;
     padding-top: .4rem;
 }
 /* FOOTER */
+/* ****FÖRSTA SIDAN SLUT**** */
+
+/* ****ANDRA SIDAN**** */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.gallery__image {
+    background-image: url(./assets/photos/04-day.jpg);
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* MEDIA QUERYS */
 
