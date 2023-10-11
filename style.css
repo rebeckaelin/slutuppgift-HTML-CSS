@@ -81,7 +81,7 @@ header {
 /* IMAGE SECTION */
 
 /* MAIN SECTION */  
-.services__title {
+.servicetitle {
     text-align: center;
     margin-top: 6rem;
     margin-bottom: 1rem;
@@ -101,8 +101,7 @@ header {
     align-items: center;
     margin: .5rem;
     width: 40vw;
-    height: 15vh;
-    padding: .8rem;
+    height: 12vh;
     border: .3rem double var(--primary_color);
     border-radius: 1rem;
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
@@ -122,13 +121,13 @@ header {
 /* MAIN SECTION */
 
 /* ASIDE */
-.featured-rooms__title {
+.gallerytitle {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
     letter-spacing: var(--lett_spa);
 }
-.featured-rooms__list {
+.gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,10 +135,10 @@ header {
     gap: 1rem;
     text-align: center;
 }
-.featured-room {
+.gallery__container {
     position: relative;
 }
-.featured-room__price {
+.gallery__price {
     position: absolute;
     font-weight: 900;
     font-size: 1.2rem;
@@ -148,12 +147,12 @@ header {
     border: .13rem solid var(--span_color);
 
 }
-.featured-room__image {
+.gallery__image {
     height: auto;
     width: 80vw;
     border: .1rem solid var(--span_color);
 }
-.featured-room__button {
+.gallery__button {
     padding: .2rem;
     margin-top: .4rem;
     font-weight: 800;
@@ -173,7 +172,7 @@ header {
     letter-spacing: var(--lett_spa);
 }
 
-.footer__nav-list {
+.footer__navlist {
     list-style-type: none;
     font-weight: 700;
     /* font-size: .9rem; */
@@ -192,27 +191,24 @@ header {
         padding-top: 7rem;
         padding-bottom: 7rem;
     }
-    .services {
-        max-width: 1001px;
-        margin: 0 auto;
-    }
-    .services_cards {
+    .infocards {
         flex-wrap: wrap;
         flex-direction: row;
+        max-width: 1013px;
+        margin: 0 auto;
     }
-    .services__card {
+    .infocards__container {
         max-width: 15rem;
-        max-height: 7rem;
+        max-height: 5rem;
     }
-    .featured-rooms__list {
+    .gallery {
         flex-direction: row;
     }
-
-    .featured-room__image {
+    .gallery__image {
         width: 28vw;
         opacity: 70%;
     }
-    .featured-room__image:hover {
+    .gallery__image:hover {
         opacity: 100%;
     }
 }
