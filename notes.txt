@@ -44,6 +44,51 @@
         </article>
     </section>
 
+.infocards__servicetitle {
+    text-align: center;
+    min-width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: var(--letter_spa);
+    font-family: var(--main_font);
+    
+}
+.infocards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.infocards__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    margin: .3rem;
+    width: 40vw;
+    height: 13vh;
+    border: var(--main_border);
+    border-radius: 1rem;
+    box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
+}
+.infocards__icon {
+    height: 25px;
+    width: 25px;
+}
+.infocards__title {
+    text-align: center;
+    font-family: var(--main_font);
+}
+.infocards__description {
+    font-weight: 200;
+    text-align: center;
+    font-size: .9rem;
+    font-family: var(--p_font);
+}
+
 
 font-family: 'Caprasimo', serif;
 font-family: 'Gabarito', sans-serif;
