@@ -66,8 +66,8 @@ header {
     background-image: url(./assets/photos/glamping\ solros.jpg);
     background-size: cover;
     background-position: 50% 55%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,11 +126,9 @@ header {
     width: 100%;
     padding: 0 1rem 0 1rem;
 }
-
 /* GALLERI */
 
 /* KONTAKTFÄLT */
-
 .contact {
     padding: 1rem;
     font-family: var(--p_font);
@@ -138,7 +136,6 @@ header {
     grid-template-columns: 1fr;
     gap: 0.4rem;
 }
-
 .contact__map, .contact__phone, .contact__mail {
     text-align: center;
     background-color: rgb(241, 241, 241);
@@ -165,8 +162,8 @@ header {
     margin-top: .4rem;
 }
 /* FOOTER */
-/* ****ANDRA SIDAN**** */
 
+/* ****ANDRA SIDAN**** */
 .about {
     text-align: center;
     display: flex;
@@ -174,8 +171,6 @@ header {
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    letter-spacing: var(--letter_spa);
-    font-family: var(--p_font);
     gap: 1rem;
     line-height: 2rem;
 }
@@ -186,11 +181,11 @@ header {
     letter-spacing: var(--letter_spa);
 }
 
-/* .about__desc {
+.about__desc {
     font-family: var(--p_font);
     font-size: .9rem;
     margin: 1rem;
-} */
+}
 
 .about__desc--mainfont {
     font-family: var(--main_font);
@@ -199,6 +194,11 @@ header {
 /* MEDIA QUERYS */
 
 @media (min-width: 768px) {
+    .heroimage {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
     .contact {
         grid-template-columns: repeat(3, 1fr);
     }
