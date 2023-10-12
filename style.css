@@ -64,7 +64,7 @@ header {
 .heroimage {
     background-image: url(./assets/photos/glamping\ solros.jpg);
     background-size: cover;
-    background-position: 50% 83%;
+    /* background-position: 50% 83%; */
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
@@ -150,14 +150,14 @@ header {
 .gallery__image {
     height:auto;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 
 /* GALLERI */
 
 /* FOOTER */
-.footer {
+/* .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,14 +169,46 @@ header {
 .footer__navlist {
     list-style-type: none;
     font-weight: 700;
-    /* font-size: .9rem; */
+    font-size: .9rem;
     font-family: var(--main_font);
 }
 .footer__logo img {
     max-height: 5rem;
     padding-top: .4rem;
-}
+} */
+
+
 /* FOOTER */
+
+.contact {
+    /* background-color: var(--primary_color); */
+    padding: 1rem;
+    font-family: var(--p_font);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.contact__map, .contact__phone, .contact__mail {
+    text-align: center;
+    background-color: var(--primary_color);
+    padding: 1rem;
+}
+
+.phone__icon {
+    width: 35px;
+    height: 35px;
+}
+
+.mail__icon {
+    width: 35px;
+    height: 35px;
+}
+
+/* .footer__logo img {
+    width: 70px;
+} */
+
 /* ****FÖRSTA SIDAN SLUT**** */
 
 /* ****ANDRA SIDAN**** */
@@ -253,14 +285,6 @@ input[type="checkbox"] {
         max-width: 17rem;
         max-height: 8rem;
     }
-    .maingallery__image {
-        width: 28vw;
-        opacity: 70%;
-    }
-    .maingallery__image:hover {
-        opacity: 100%;
-    }
-
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
