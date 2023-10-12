@@ -43,7 +43,7 @@
             <p class="infocards__description">Visit the nearby town with small shops</p>
         </article>
     </section>
-    
+
 ------------------------------
 
 .infocards__servicetitle {
@@ -151,3 +151,57 @@ font-family: 'Gabarito', sans-serif;
     </div>
 
 
+/* ****FORMULÄR**** */
+.selectors {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+    /* gap: 1rem; */
+}
+.selectors label {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .8rem 0 .2rem 0;
+}
+
+/* input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    background: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    border: black solid 1px;
+    height: 7px;
+} */
+
+option {
+    background-color: white;
+    font-size: 1.2rem;
+}
+.checkboxes {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    letter-spacing: .02rem;
+}
+.checkboxes label {
+    margin-right: .3rem;
+}
+input[type="checkbox"] {
+    margin-right: .8rem;
+    margin-top: .15rem;
+}
+/* ****FORMULÄR**** */
