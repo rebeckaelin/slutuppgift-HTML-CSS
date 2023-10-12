@@ -159,12 +159,6 @@ header {
     width: 80vw;
     border: .1rem solid var(--span_color);
 }
-.maingallery__button {
-    padding: .2rem;
-    margin-top: .4rem;
-    font-weight: 800;
-    font-size: .9rem;
-}
 
 /* ASIDE */
 
