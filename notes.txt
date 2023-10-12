@@ -74,3 +74,10 @@
         <figure class="gallery__image"></figure>
         <figure class="gallery__image"></figure> -->
     </section>
+
+
+font-family: 'Caprasimo', serif;
+font-family: 'Gabarito', sans-serif;
+'Gloock', serif;
+
+

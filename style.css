@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@900&family=Oswald:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Frank+Ruhl+Libre:wght@900&family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Frank+Ruhl+Libre:wght@900&family=Gabarito&family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font);
+    /* font-family: var(--p_font) */
 }
 
 :root {
-    --font:'Oswald', sans-serif;
-    --lett_spa: .1rem ;
-    --primary_color: rgb(222,207,214);
+    --main_font:'Caprasimo', serif;
+    --p_font: 'Gabarito', sans-serif;
+    --letter_spa: .1rem ;
+    --primary_color: rgb(200, 200, 200, 0.8);
     --primary_color_op: rgb(222,207,214,.6);
     --secondary_color_op: rgba(253, 253, 253, 0.35);
     --span_color: rgb(85,92,99);
@@ -29,7 +36,6 @@ header {
     align-items: center;
     background-color: var(--primary_color);
     padding: .5rem;
-    letter-spacing: var(--lett_spa);
 }
 .header__logo img {
     max-height: 5vh;
@@ -37,8 +43,8 @@ header {
 .header__navlist {
     list-style-type: none;
     display: flex;
-    font-weight: 700;
-    /* font-size: .9rem; */
+    /* font-weight: 700; */
+    font-family: var(--main_font);
 }
 .nav__item {
     margin: .5rem;
@@ -56,7 +62,7 @@ header {
 /* ****FÖRSTA SIDAN **** */
 /* IMAGE SECTION */
 .heroimage {
-    background-image: url(./assets/photos/09-day.jpg);
+    background-image: url(./assets/photos/glamping\ solros.jpg);
     background-size: cover;
     background-position: 50% 83%;
     padding-top: 2rem;
@@ -64,10 +70,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    letter-spacing: var(--lett_spa);
+    letter-spacing: var(--letter_spa);
 }
 .heroimage__shade {
-    background-color: var(--secondary_color_op);
+    background-color: rgb(200, 200, 200, 0.8);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -77,10 +83,12 @@ header {
     box-shadow: 1px 11px 5px -4px rgba(0,0,0,0.39);
 }
 .heroimage__title {
-    font-size: 2rem;
+    font-size: 1rem;
+    font-family: var(--main_font);
 }
 .heroimage__description {
-    font-weight: 500;
+    font-family: var(--p_font);
+    font-size: .89rem;
 }
 /* IMAGE SECTION */
 
@@ -92,12 +100,15 @@ header {
     margin-bottom: 1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    letter-spacing: var(--lett_spa);
+    letter-spacing: var(--letter_spa);
+    font-family: var(--main_font);
+    
 }
 .infocards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 .infocards__container {
     display: flex;
@@ -118,51 +129,32 @@ header {
 }
 .infocards__title {
     text-align: center;
+    font-family: var(--main_font);
 }
 .infocards__description {
     font-weight: 200;
     text-align: center;
     font-size: .9rem;
+    font-family: var(--p_font);
 }
 /* MAIN SECTION */
 
-/* ASIDE */
-.maingallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* GALLERI */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 1rem;
-    flex-wrap: wrap;
+    align-items: center;
+}
+.gallery__image {
+    height:auto;
+    width: 100%;
+    padding: 1rem;
 }
 
-.maingallery__title {
-    text-align: center;
-    margin-top: 2rem;
-    letter-spacing: var(--lett_spa);
-    min-width: 100%;
-    text-align: center;
-}
-.maingallery__container {
-    position: relative;
-    min-width: 10;
-    text-align: center;
-}
-.maingallery__price {
-    position: absolute;
-    font-weight: 900;
-    font-size: 1.2rem;
-    background-color: var(--primary_color_op);
-    padding: .2rem;
-    border: var(--secondary_border)
-}
-.maingallery__image {
-    height: auto;
-    width: 80vw;
-    border: .1rem solid var(--span_color);
-}
 
-/* ASIDE */
+/* GALLERI */
 
 /* FOOTER */
 .footer {
@@ -172,15 +164,16 @@ header {
     padding: .7rem;
     background-color: var(--primary_color);
     margin-top: 2rem;
-    letter-spacing: var(--lett_spa);
+    letter-spacing: var(--letter_spa);
 }
 .footer__navlist {
     list-style-type: none;
     font-weight: 700;
     /* font-size: .9rem; */
+    font-family: var(--main_font);
 }
 .footer__logo img {
-    max-height: 4vh;
+    max-height: 5rem;
     padding-top: .4rem;
 }
 /* FOOTER */
@@ -242,48 +235,13 @@ input[type="checkbox"] {
 }
 /* ****FORMULÄR**** */
 
-/* ****GALLERI**** */
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    /* gap: 1rem; */
-}
-.gallery__image {
-    /* border: .3rem double var(--primary_color); */
-    margin: .9rem 1rem 0 1rem;
-}
-
-.gallery__image img {
-    width: 100%;
-    border: var(--secondary_border);
-}
-
-.gallery__description {
-    text-align: center;
-    border: var(--main_border);
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: var(--lett_spa);
-    padding: .4rem;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* MEDIA QUERYS */
 
 @media (min-width: 520px) {
     .heroimage {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
     .infocards {
         flex-wrap: wrap;
@@ -294,9 +252,6 @@ input[type="checkbox"] {
     .infocards__container {
         max-width: 17rem;
         max-height: 8rem;
-    }
-    .maingallery {
-        flex-direction: row;
     }
     .maingallery__image {
         width: 28vw;
