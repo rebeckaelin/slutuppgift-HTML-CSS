@@ -151,10 +151,10 @@ header {
     padding: .7rem;
     border-radius: 2rem;
 }
-/* .phone__icon , .mail__icon {
-    width: 35px;
-    height: 35px;
-} */
+.phone__icon , .mail__icon , .map__icon {
+    width: 50px;
+    height: auto;
+}
 /* KONTAKTFÄLT */
 /* ****FÖRSTA SIDAN SLUT**** */
 
