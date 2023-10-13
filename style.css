@@ -178,6 +178,11 @@ header {
     font-family: var(--p_font);
 }
 
+.facilities {
+    background-color: rgb(241, 241, 241);
+    
+}
+
 /* MEDIA QUERYS */
 
 @media (min-width: 768px) {
