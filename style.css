@@ -208,11 +208,15 @@ header {
 .room {
     margin: 2rem 1rem  1rem;
 }
+.list__item {
+    margin-bottom: .5rem;
+}
 .checkbox__list {
     font-family: var(--p_font);
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 2rem 0;
 }
 .container__button {

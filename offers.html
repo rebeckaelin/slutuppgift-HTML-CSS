@@ -20,8 +20,9 @@
     <main class="room">
         <h2 class="room__title">TÄLT & HÄNGMATTOR</h2>
 
-        <form class="room__checkbox">
-            <ul class="checkbox__list">
+
+        <ul class="checkbox__list">
+            <form class="checkbox__option">
                 <li class="list__item">
                     <input type="checkbox" name="tent" id="form__tent">
                     <label for="form__tent">TÄLT</label>
@@ -29,13 +30,20 @@
                 <li class="list__item">
                     <input type="checkbox" name="hamock" id="form__hamock">
                     <label for="form__hamock">HÄNGMATTA</label>
+            </li>
+            </form>
+            <form class="checkbox__date">
+                <li class="list__item">
+                    <input type="date" name="calender" id="form__date-input">
+                    <label for="form__date-input">INCHECKNING</label>
                 </li>
                 <li class="list__item">
                     <input type="date" name="calender" id="form__date-input">
-                    <label for="form__date-input">DATUM</label>
+                    <label for="form__date-input">UTCHECKNING</label>
                 </li>
-            </ul>
-        </form>
+            </form>
+        </ul>
+        
         
         <article class="room__container">
             <div class="container__info">
