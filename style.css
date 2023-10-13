@@ -122,6 +122,7 @@ header {
     border: var(--secondary_border);
     padding: .7rem;
     letter-spacing: var(--letter_spa);
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.22);
 }
 /* MAIN INFORMATION */
 
@@ -130,9 +131,9 @@ header {
     margin-top: 1rem;
 }
 .gallery__image {
-    height:auto;
+    height: auto;
     width: 100%;
-    padding: 0 1rem 0 1rem;
+    padding: 0 .5rem;
 }
 /* GALLERI */
 
@@ -164,21 +165,17 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 1.5rem 1rem 1rem 1rem;
     gap: 1rem;
     line-height: 2rem;
 }
 .about__title {
     font-family: var(--main_font);
-    margin-top: 1.5rem;
     letter-spacing: var(--letter_spa);
+    text-align: center;
 }
 .about__desc {
     font-family: var(--p_font);
-    margin: 1rem;
-}
-.about__desc--mainfont {
-    font-family: var(--main_font);
 }
 
 /* MEDIA QUERYS */
@@ -260,7 +257,7 @@ header {
     .information > :nth-child(4) {
         grid-column: 1/5;
     }
-     .gallery {
+    .gallery {
         grid-column: 5/7;
         grid-row: 2/5;
     } 
