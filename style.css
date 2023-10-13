@@ -59,7 +59,7 @@ header {
 /* ****FÖRSTA SIDAN **** */
 /* HERO IMAGE */
 .heroimage {
-    background-image: url(./assets/photos/);
+    background-image: url(./assets/photos/glamping_solros.jpg);
     background-size: cover;
     background-position: 50% 55%;
     margin-top: 1rem;
