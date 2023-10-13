@@ -122,7 +122,7 @@ header {
     border: var(--secondary_border);
     padding: .7rem;
     letter-spacing: var(--letter_spa);
-    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.22);
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.26);
 }
 /* MAIN INFORMATION */
 
@@ -151,10 +151,10 @@ header {
     padding: .7rem;
     border-radius: 2rem;
 }
-.phone__icon , .mail__icon {
+/* .phone__icon , .mail__icon {
     width: 35px;
     height: 35px;
-}
+} */
 /* KONTAKTFÄLT */
 /* ****FÖRSTA SIDAN SLUT**** */
 
