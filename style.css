@@ -180,7 +180,29 @@ header {
 
 .facilities {
     background-color: rgb(241, 241, 241);
-    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--p_font);
+    letter-spacing: var(--letter_spa);
+}
+
+.facilities__box {
+    border: solid .1rem black;
+    border-radius: 1rem;
+    background-color: white;
+    width: clamp(7rem,40%,14rem);
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.26);
+}
+
+.facilities__icon {
+    width: 50px;
 }
 
 /* MEDIA QUERYS */
