@@ -97,6 +97,8 @@ font-family: 'Caprasimo', serif;
 font-family: 'Gabarito', sans-serif;
 'Gloock', serif;
 
+font-family: 'Young Serif', serif;
+
 ------------------------------------
 
     <form class="selectors">
@@ -205,3 +207,28 @@ input[type="checkbox"] {
     margin-top: .15rem;
 }
 /* ****FORMULÄR**** */
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 0;
+    letter-spacing: .02rem;
+}
+.checkboxes label {
+    margin-left: 3rem;
+}
+input[type="checkbox"] {
+    margin-right: .8rem;
+    margin-top: 1rem;
+}
+
+        <form class="checkboxes">
+            <input type="checkbox" name="tent" id="form__tent">
+            <label for="form__tent">TÄLT</label>
+
+            <input type="checkbox" name="hamock" id="form__hamock">
+            <label for="form__hamock">HÄNGMATTA</label>
+
+        </form>
