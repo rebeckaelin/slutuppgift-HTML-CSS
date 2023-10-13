@@ -182,19 +182,26 @@ header {
     background-color: rgb(241, 241, 241);
     display: flex;
     flex-wrap: wrap;
+
     padding: 2rem;
     align-items: center;
     justify-content: center;
     font-family: var(--p_font);
-    letter-spacing: var(--letter_spa);
+    /* letter-spacing: var(--letter_spa); */
+    font-size: .9rem;
 }
 
 .facilities__box {
     border: solid .1rem black;
     border-radius: 1rem;
     background-color: white;
-    width: clamp(7rem,40%,14rem);
-    aspect-ratio: 1/1;
+    width: 144px;
+    height: 144px;
+    /* width: clamp(7rem,41%,10rem);*/
+    /* aspect-ratio: 1/1;  */
+    /* flex-basis: 40%; */
+    /* align-self: stretch; */
+    font-style: italic;
     padding: 1rem;
     text-align: center;
     margin: 1rem;
@@ -202,7 +209,7 @@ header {
 }
 
 .facilities__icon {
-    width: 50px;
+    width: 45px;
 }
 
 /* MEDIA QUERYS */
