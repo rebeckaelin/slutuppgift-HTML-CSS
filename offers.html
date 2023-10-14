@@ -10,85 +10,66 @@
     <header class="header">
         <nav class="header__nav">
             <ul class="header__navlist">
-                <li class="nav__item"><a class="nav__link" href="./index.html">HEM</a></li>
-                <li class="nav__item"><a class="nav__link" href="./about.html">OM OSS</a></li>
-                <li class="nav__item"><a class="nav__link" href="./offers.html">ERBJUDANDEN</a></li>
+                <li class="header__navitem"><a class="header__navlink" href="./index.html">HEM</a></li>
+                <li class="header__navitem"><a class="header__navlink" href="./about.html">OM OSS</a></li>
+                <li class="header__navitem"><a class="header__navlink" href="./offers.html">ERBJUDANDEN</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="room">
-        <h2 class="room__title">TÄLT & HÄNGMATTOR</h2>
-
-
-        <ul class="checkbox__list">
-            <form class="checkbox__option">
-                <li class="list__item">
-                    <input type="checkbox" name="tent" id="form__tent">
-                    <label for="form__tent">TÄLT</label>
-                </li>
-                <li class="list__item">
-                    <input type="checkbox" name="hamock" id="form__hamock">
-                    <label for="form__hamock">HÄNGMATTA</label>
+    <main class="options">
+        <h2 class="options__title">TÄLT & HÄNGMATTOR</h2>
+        <ul class="options__list">
+            <li class="options__listitem">
+                <div class="options__roomtype">
+                    <input type="checkbox" name="tent" id="options__tent">
+                    <label for="options__tent">TÄLT</label>
+                </div>
+                <div class="options__roomtype">
+                    <input type="checkbox" name="hamock" id="options__hamock">
+                    <label for="options__hamock">HÄNGMATTA</label>
+                </div>
             </li>
-            </form>
-            <form class="checkbox__date">
-                <li class="list__item">
-                    <input type="date" name="calender" id="form__date-input">
-                    <label for="form__date-input">INCHECKNING</label>
-                </li>
-                <li class="list__item">
-                    <input type="date" name="calender" id="form__date-input">
-                    <label for="form__date-input">UTCHECKNING</label>
-                </li>
-            </form>
-        </ul>
-        
-        
-        <article class="room__container">
-            <div class="container__info">
-                <h3 class="container__title">TÄLT</h3>
-                <p class="container__desc">Att sova i ett tält är en unik och speciell upplevelse. Man kan höra ljuden från naturen runt sig - vindsus, fågelsång och kanske till och med ett djur som smyger förbi. Det är en påminnelse om att man är en del av något större och att världen inte bara är byggd av sten och betong.
+            <li class="options__listitem">
+                <div class="options__date">
+                    <input type="date" name="checkin" id="options__date-input">
+                    <label for="date-input">INCHECKNING</label>
+                </div>
+                <div class="options__date">
+                    <input type="date" name="checkout" id="options__date-output">
+                    <label for="options__date-output">UTCHECKNING</label>
+                </div>
+            </li>
+        </ul>    
+        <section class="options__room">
+            <article class="options__info">
+                <h3 class="options__title">TÄLT</h3>
+                <p class="options__desc">Att sova i ett tält är en unik och speciell upplevelse. Man kan höra ljuden från naturen runt sig - vindsus, fågelsång och kanske till och med ett djur som smyger förbi. Det är en påminnelse om att man är en del av något större och att världen inte bara är byggd av sten och betong.
                 <br><br>2500kr / natt</p>
-                <button class="container__button">BOKA</button>
-            </div>
+                <button class="book-button">BOKA</button>
+            </article>
+            <img class="options__image" src="./assets/photos/glamping_stort_tent.webp" alt="tent">
+            <img class="options__image" src="./assets/photos/glamping_stolar_inne.jpg" alt="tent">
+            <img class="options__image" src="./assets/photos/glamping_tent_lykta.jpg" alt="tent">
+        </section>
 
+        <section class="options__room">
+            <article class="options__info">
+                <h3 class="options__title">HÄNGMATTA</h3>
+                <p class="options__desc">En hängmatta är som en port till världen av avkoppling och frid. Det är enkelt att förtrollas av den mjuka svingningen och det lätta gungandet som vaggar kroppen till en lugn och stilla tillstånd. En hängmatta är som en personlig oas där man kan fly vardagens stress och bekymmer. <br><br>900kr / natt</p>
+                <button class="book-button">BOKA</button>
+            </article>
 
-            <figure class="image">
-                <img src="./assets/photos/glamping_stort_tent.webp" alt="tent">
-            </figure>
-            <figure class="image">
-                <img src="./assets/photos/glamping_stolar_inne.jpg" alt="tent">
-            </figure>
-            <figure class="image">
-                <img src="./assets/photos/glamping_tent_lykta.jpg" alt="tent">
-            </figure>
-
-        </article>
-
-        <article class="room__container">
-            <div class="container__info">
-                <h3 class="container__title">HÄNGMATTA</h3>
-                <p class="container__desc">En hängmatta är som en port till världen av avkoppling och frid. Det är enkelt att förtrollas av den mjuka svingningen och det lätta gungandet som vaggar kroppen till en lugn och stilla tillstånd. En hängmatta är som en personlig oas där man kan fly vardagens stress och bekymmer. <br><br>1500kr / natt</p>
-                <button class="container__button">BOKA</button>
-            </div>
-
-            <figure class="image" >
-                <img src="./assets/photos/glamping_hängmatta2.jpg" alt="hamock">
-            </figure>
-            <figure class="image">
-                <img src="./assets/photos/glamping_gjusen.jpeg" alt="gjusen">
-            </figure>
-            <figure class="image">
-                <img src="./assets/photos/glamping_hängmatta.jpg" alt="hamock">
-            </figure>
-        </article>
+            <img class="options__image" src="./assets/photos/glamping_hängmatta2.jpg" alt="hamock">
+            <img class="options__image" src="./assets/photos/glamping_gjusen.jpeg" alt="gjusen">
+            <img class="options__image" src="./assets/photos/glamping_hängmatta.jpg" alt="hamock">
+        </section>
     </main>
-    
+
     <footer class="footer">
         <figure class="footer__logo">
             <figcaption class="footer__desc">i samarbete med</figcaption>
-            <img src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="">
+            <img src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="logo_bonzai">
         </figure>
     </footer>
 </body>
